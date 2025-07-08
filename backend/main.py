@@ -47,7 +47,7 @@ async def shorten_url(req: ShortenRequest, request: Request):
             Log("backend", "error", "service", "Failed to generate unique shortcode.")
             raise HTTPException(status_code=500, detail="Could not generate unique shortcode.")
 
-    expiry = datetime.utcnow() + timedelta(minutes=req.validity or 30)
+    expiry = datetime.now(UTC) + timedelta(minutes=req.validity or 30)
     save_url(code, str(req.url), expiry)
     Log("backend", "info", "repository", f"Shortened URL stored with code: {code}")
 

@@ -38,5 +38,5 @@ def Log(stack:str,level:str,package:str,message:str):
     except Exception as e:
         print(f"[LOGGING ERROR] Failed to send log to API: {e}")
         
-# if __name__=='__main__':
-#     Log('backend','error','controller','logger initialized')
+if __name__=='__main__':
+    Log('backend','error','controller','logger initialized')
