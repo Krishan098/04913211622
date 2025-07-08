@@ -1,4 +1,4 @@
-# AffordMed URL Shortener Microservice
+# URL Shortener Microservice
 
 ## Overview
 A robust, FastAPI-based microservice for shortening URLs, with built-in analytics and centralized logging via a custom logging middleware. All logs are sent to a protected remote API. The service supports custom or auto-generated shortcodes, expiry, and click analytics.
@@ -8,7 +8,7 @@ A robust, FastAPI-based microservice for shortening URLs, with built-in analytic
 ## Project Structure
 
 ```
-affordmed/
+04913211622/
 ├── backend/
 │   ├── __init__.py
 │   ├── main.py
